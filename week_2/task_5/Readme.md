@@ -3,11 +3,17 @@
 Чтобы очистить содержимое вектора, надо вызвать у него метод clear:
 
 vector<string> words = {"hey", "hi"};
+
 words.clear();
+
 // Теперь вектор words пуст
 
 vector<string> source = {"a", "b", "c"};
+
 vector<string> destination = {"z"};
+
 MoveStrings(source, destination);
+
 // source должен оказаться пустым
+
 // destination должен содержать строки "z", "a", "b", "c" именно в таком порядке

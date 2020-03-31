@@ -3,6 +3,9 @@
 Пример
 
 int a = 4;
+
 int b = 2;
+
 UpdateIfGreater(a, b);
+
 // b должно стать равно 4
