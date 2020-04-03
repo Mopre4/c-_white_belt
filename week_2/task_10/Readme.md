@@ -46,47 +46,32 @@ NEXT
 	NEXT
 	DUMP 31
 	DUMP 30
-
-DUMP 28
-
-ADD 28 Payment
-
-DUMP 28
+	DUMP 28
+	ADD 28 Payment
+	DUMP 28
 
 Вывод
 
-1 Salary
-
-2 WalkPreparations Walk
-
-0
-
-0
-
-2 WalkPreparations Walk
-
-3 WalkPreparations Walk Payment
+	1 Salary
+	2 WalkPreparations Walk
+	0
+	0
+	2 WalkPreparations Walk
+	3 WalkPreparations Walk Payment
 
 Указание
 Для дописывания всех элементов вектора v2 в конец вектора v1 удобно использовать метод insert:
 
-v1.insert(end(v1), begin(v2), end(v2));
+	v1.insert(end(v1), begin(v2), end(v2));
 
 Кроме того, элементом вектора может быть любой тип, в том числе и другой вектор. Например, vector<vector<int>> — это вектор, элементами которого являются вектора целых чисел (то есть двумерный массив). Пример использования:
 
 
-vector<vector<int>> m(10); // Создаём вектор из десяти векторов целых чисел
-
-m[0].push_back(5);  // Добавляем элементы в первый вектор
-
-m[0].push_back(15);
-
-cout << m[0][1]; // Выведет 15 — второй элемент первого вектора
-
-m[1].push_back(3);
-
-for (int x : m[1]) {
-
-    // Перебираем все элементы второго 
-
-}
+	vector<vector<int>> m(10); // Создаём вектор из десяти векторов целых чисел
+	m[0].push_back(5);  // Добавляем элементы в первый вектор
+	m[0].push_back(15);
+	cout << m[0][1]; // Выведет 15 — второй элемент первого вектора
+	m[1].push_back(3);
+	for (int x : m[1]) {
+		// Перебираем все элементы второго 
+	}
