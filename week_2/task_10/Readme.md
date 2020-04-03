@@ -36,25 +36,16 @@ NEXT
 
 Ввод
 
-12
-
-ADD 5 Salary
-
-ADD 31 Walk
-
-ADD 30 WalkPreparations
-
-NEXT
-
-DUMP 5
-
-DUMP 28
-
-NEXT
-
-DUMP 31
-
-DUMP 30
+	12
+	ADD 5 Salary
+	ADD 31 Walk
+	ADD 30 WalkPreparations
+	NEXT
+	DUMP 5
+	DUMP 28
+	NEXT
+	DUMP 31
+	DUMP 30
 
 DUMP 28
 
