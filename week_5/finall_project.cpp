@@ -40,9 +40,15 @@ private:
 bool operator < (const Date& lhs, const Date& rhs) {
 	if (lhs.GetYear() == rhs.GetYear()) {
 		if (lhs.GetMonth() == rhs.GetMonth()) {
-			return lhs.GetDay() < rhs.GetDay();
+			if (lhs.GetDay() < rhs.GetDay()) {
+				return 1;
+			}
+			else return 0;
 		}
-		return lhs.GetMonth() < rhs.GetMonth();
+		else if (lhs.GetMonth() < rhs.GetMonth()) {
+			return 1;
+		}
+		else return 0;
 	}
 	return lhs.GetYear() < rhs.GetYear();
 }
